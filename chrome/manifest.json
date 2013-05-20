@@ -1,18 +1,18 @@
 {
-	"name": "TabE",
+	"name": "ReTitle",
 	"version": "1.0",
 	"manifest_version": 2,
-	"description": "TabE is a tool to manipulate Tab Title and Icon.",
-	"homepage_url": "http://pratikabu.users.sourceforge.net/extensions/tabe",
+	"description": "ReTitle is a tool to manipulate Tab Title and Icon.",
+	"homepage_url": "http://pratikabu.users.sourceforge.net/extensions/retitle",
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
 	},
 
 	"icons": {
-		"16": "icons/tabe-16.png",
-		"24": "icons/tabe-24.png",
-		"48": "icons/tabe-48.png"
+		"16": "icons/retitle-16.png",
+		"24": "icons/retitle-24.png",
+		"48": "icons/retitle-48.png"
 	},
 	
 	"permissions": [
@@ -21,7 +21,7 @@
 	],
 	
 	"content_scripts": [
-		{ "matches": ["<all_urls>"], "js": ["tabe_script.js"] }
+		{ "matches": ["<all_urls>"], "js": ["main_script.js"] }
 	],
   
 	"web_accessible_resources": [
