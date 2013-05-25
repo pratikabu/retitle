@@ -29,5 +29,8 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 	if("complete" == changeInfo.status) {
 		chrome.tabs.sendMessage(tab.id, {updateWhat: "initData", oTitle: tab.title, oFavicon: tab.favIconUrl});
+		console.log("completed: " + tab.title + ", " + tab.favIconUrl);
+	} else {
+		console.log("loading: " + tab.title + ", " + tab.favIconUrl);
 	}
 });

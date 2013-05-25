@@ -11,8 +11,8 @@
 
 	"icons": {
 		"16": "icons/retitle-16.png",
-		"24": "icons/retitle-24.png",
-		"48": "icons/retitle-48.png"
+		"48": "icons/retitle-48.png",
+		"128": "icons/retitle-128.png"
 	},
 	
 	"permissions": [
